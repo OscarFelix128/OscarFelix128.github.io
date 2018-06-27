@@ -1,45 +1,167 @@
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale-1.0">
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Página Pessoal</title>
-	<link rel="icon" href="https://cdn1.iconfinder.com/data/icons/social-media-vol-3-2/24/_f-128.png" type="image/x-icon" />
-</head>
-<center>
-<body>
-	<h1>Olá tabela</h1>
-	<h2>Olá tabela</h2>
-	<h3>Olá tabela</h3>
-	<h4>Olá tabela</h4>
-	<h5>Olá tabela</h5>
-	<h6>Olá tabela</h6>
-	<table>
-		<thead>
-			<tr>
-				<th>Nome</th>
-				<th>Ano</th>
-				<th>Status</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Oscar</td>
-				<td>2018</td>
-				<td>(eu)</td>
-			</tr>
-			<tr>
-				<td>Roger</td>
-				<td>2018</td>
-				<td>(Aleatório 1)</td>
-			</tr>
-			<tr>
-				<td>Carlos</td>
-				<td>2018</td>
-				<td>(Aleatório 2)</td>
-			</tr>
-		</tbody>
-	</table>
-</body>
-</center>
+<!--
+Adicionar ícone na "aba" do site. (1,0) FEITO
+Alterar foto de perfil. (1,0) FEITO
+Alterar nome. (0,5) FEITO
+Alterar profissão. (0,5) FEITO
+Alterar descrição. (0,5) FEITO
+Alterar informações pessoais. (0,75) FEITO
+Adicionar experiências. (0,75) FEITO
+Alterar cor/imagem de fundo. (1,5) FEITO
+Adicionar uma animação :hover. (1,5) FEITO
+Exibir no fundo da página a data e hora. (1,5) FEITO
+Alterar demais informações do site (descrição e imagem no header). (0,5) FEITO
+A avaliação será feita através do link do github.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>Oscar Felix</title>
+    <meta name="description" content="Sou estudante na instituição de ensino SENAI, estou cursando Desenvolvimento de Sistemas, com previsão de termino para o 
+									  segundo semestre de 2019. Nas horas vagas costumo assistir filmes, séries e jogar online. Estou aprendendo a tocar violão
+									  sozinho, pesquisando e praticando. Meu objetivo é ter meu próprio empreendimento ligado a área de TI, me dedicando e sempre
+									  buscando estar atualizado com o que acontece no mundo da tecnologia.">
+    <meta property="og:description" content="Sou estudante na instituição de ensino SENAI, estou cursando Desenvolvimento de Sistemas, com previsão de termino para o 
+									  segundo semestre de 2019. Nas horas vagas costumo assistir filmes, séries e jogar online. Estou aprendendo a tocar violão
+									  sozinho, pesquisando e praticando. Meu objetivo é ter meu próprio empreendimento ligado a área de TI, me dedicando e sempre
+									  buscando estar atualizado com o que acontece no mundo da tecnologia.">
+    <meta property="og:image" content="https://scontent.fbnu3-1.fna.fbcdn.net/v/t1.0-9/30126946_1503714423089209_4355657554714427392_n.jpg?_nc_cat=0&oh=25d5fe0ae33f8f06704ac5edb7f7c3c7&oe=5BAA9149">
+    <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/social-media-vol-3-2/24/_f-128.png" type="image/x-icon" />
+	<style>
+      body {
+        background-image: url("https://img00.deviantart.net/5a79/i/2010/033/e/d/surface_i_wallpaper_by_sword1ne.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+        font-family: monospace;
+        text-align: center;
+        color: #b4b4b4;
+      }
+      h1 {
+        font-size: 30px;
+        color: #f1f0f0;
+      }
+      h2 {
+        font-size: 15px;
+        margin: 10px 0;
+      }
+      a {
+        color: #8295bb;
+        text-decoration: none;
+      }
+	  a:hover {
+        color: #FF8C00;
+        text-decoration: none;
+	  }
+      section {
+        margin: 15px 0;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 95vh;
+      }
+      header {
+        color: #b7b7b7;
+      }
+      header .photo img {
+        border-radius: 100%;
+      }
+      header .basic-info .current-role {
+        font-size: 20px;
+      }
+      header .sub-current-role {
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+      .contact {
+        margin-top: 0;
+      }
+      .contact h2 {
+        display: none;
+      }
+      .socials {
+        margin: 15px 0;
+      }
+      .tags .tag {
+        padding: 6px 10px;
+        background-color: #312727;
+        font-size: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 5px 0;
+      }
+      .companies img {
+        margin: 10px;
+        height: 25px;
+      }
+	  .borda-nome{
+		border-top-width: thick;
+		border-top-style: solid;
+		border-top-color: grey;
+
+		border-bottom-width: thick;
+		border-bottom-style: solid;
+		border-bottom-color: grey;
+
+		border-right-width: thick;
+		border-right-style: solid;
+		border-right-color: light gray;
+
+		border-left-width: thick;
+		border-left-style: solid;
+		border-left-color: light gray;
+	  }
+    </style>
+  </head>
+
+  <body >
+    <main class="container">
+      <header>
+        <div class="photo">
+          <img src="https://scontent.fbnu3-1.fna.fbcdn.net/v/t1.0-9/30126946_1503714423089209_4355657554714427392_n.jpg?_nc_cat=0&oh=25d5fe0ae33f8f06704ac5edb7f7c3c7&oe=5BAA9149" alt="Fabrício Ronchi" width="139" height="142">
+        </div>
+        <div class="basic-info">
+          <h1><span class="borda-nome">Oscar Felix</span></h1>
+          <p class="current-role">Aluno do SENAI</p>
+          <p class="sub-current-role">Sou estudante na instituição de ensino SENAI, estou cursando Desenvolvimento de Sistemas, com previsão de termino para o 
+									  segundo semestre de 2019. Nas horas vagas costumo assistir filmes, séries e jogar online. Estou aprendendo a tocar violão
+									  sozinho, pesquisando e praticando. Meu objetivo é ter meu próprio empreendimento ligado a área de TI, me dedicando e sempre
+									  buscando estar atualizado com o que acontece no mundo da tecnologia.
+		  </p>
+        </div>
+      </header>
+      <section class="contact">
+        <h2 aria-hidden="true">Contact</h2>
+        <div>Email: <a href="oscar.felix128@gmail.com">oscar.felix128@gmail.com</a></div>
+        <div>Github: <a href="https://github.com/oscarfelix128" target="_blank" rel="noopener">@oscarfelix128</a></div>
+        <div>Linkedin: <a href="https://www.linkedin.com/in/oscar-felix-831670136/" target="_blank" rel="noopener">Oscar Felix</a></div>
+		<div>Facebook: <a href="https://www.facebook.com/oscar.felix.1293" target="_blank" rel="noopener">Oscar Felix</a></div>
+		<div>Instagram: <a href="https://www.instagram.com/felix_flow/" target="_blank" rel="noopener">@felixflow</a></div>
+		<div>Whatsapp: <a>(47) 9 9712-6697</a></div>
+      </section>
+      <section class="tags">
+        <h2>Experiência</h2>
+        <span class="tag">HTML</span>
+        <span class="tag">Javascript</span>
+        <span class="tag">Python</span>
+        <span class="tag">Portugol</span>
+      </section>
+    </main>
+	<footer id="impressao">
+		<script type="text/javascript" language="JavaScript">
+			var imrpessao = document.getElementById('impressao');
+			function Imprimir(){
+			    var dataehora = new Date();
+				impressao.innerHTML = dataehora;
+			}
+			setInterval(function(){ Imprimir(); }, 1000);
+		</script>
+	</footer>
+	</body>
 </html>
